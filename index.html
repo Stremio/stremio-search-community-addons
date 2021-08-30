@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.stremio.com/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://www.stremio.com/favicon-96x96.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-deep_purple.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <title>Search Stremio Community Addons</title>
+  </head>
+
+  <body>
+    <center>
+
+      <h3 class="page-title">Search Stremio Community Addons</h3>
+
+      This is a tool to search Stremio community addons and find the addon URL.<br/><br/>
+
+      Click on a search result to copy the addon URL.<br/><br/>
+
+      <form id="publishForm" action="" method="post" enctype="application/json">
+
+        <div class="mdl-textfield mdl-js-textfield">
+          <input class="mdl-textfield__input" type="text" name="transportUrl" id="searchString">
+          <label class="mdl-textfield__label" for="sample1">Addon Name</label>
+        </div>
+
+        <input type="hidden" name="transportName" value="http">
+
+        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+          Search
+        </button>
+
+      </form>
+      <br/>
+      <div id="search-results"></div>
+      <br/><br/><br/>
+    </center>
+  </body>
+</html>

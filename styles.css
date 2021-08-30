@@ -1,0 +1,23 @@
+.page-title {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.mdl-button {
+  margin-left: 20px;
+}
+
+.addon-result {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0,0,0,0.3);
+  cursor: pointer;
+  max-width:  80%;
+}
+
+.addon-result-first {
+  border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.addon-result:hover {
+  background-color: rgba(0,0,0,0.1);
+}
