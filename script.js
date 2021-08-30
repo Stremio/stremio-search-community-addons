@@ -36,7 +36,7 @@ function search(src) {
   if (searchResults.length)
     $('#search-results').html(searchResults.map((el, ij) => { return '<div class="addon-result' + (!ij ? ' addon-result-first' : '') + '" onclick="copyLink(event, \''+addonUrls[el]+'\')"><b>'+el+'</b><br/>'+addonUrls[el]+'</div>' }).join(''))
   else 
-    $('#search-results').html('')
+    $('#search-results').html('No Results')
 }
 
 document.addEventListener('DOMContentLoaded', function() {
